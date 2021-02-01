@@ -58,6 +58,15 @@ public final class CsvRow {
     public List<String> getFields() {
         return Collections.unmodifiableList(Arrays.asList(fields));
     }
+    
+    /**
+     * Gets all fields as array.
+     *
+     * @return all fields of this row, never {@code null}
+     */
+    public String[] asArray() {
+        return fields;
+    }
 
     /**
      * Gets the number of fields of this row.
